@@ -9,9 +9,9 @@ describe('About Backbone.Model', function() {
         var todo = new Todo();
 
         var defaultAttrs = {
-            text: 'What is the default value?',
-            done : 'What is the default value?',
-            order: 'What is the default value?'
+            text: '',
+            done : false,
+            order: 0
         }
 
         expect(defaultAttrs).toEqual(todo.attributes);
