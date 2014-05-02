@@ -95,10 +95,10 @@ describe('About Backbone.Events', function() {
         var spy2 = jasmine.createSpy('-Spy 2-');
         var spy3 = jasmine.createSpy('-Spy 3-');
 
-        obj.on('foo', spy1);
+        obj.off('foo', spy1);
         obj.on('foo', spy2);
         obj.on('foo', spy3);
-        obj.on('bar', spy1);
+        obj.off('bar', spy1);
 
         // How do you unbind just a single callback for the event?
 
@@ -107,7 +107,7 @@ describe('About Backbone.Events', function() {
         expect(spy1).not.toHaveBeenCalled();
 
         // How do you unbind all callbacks tied to the event with a single method?
-
+		obj.off('foo all');
         obj.trigger('foo');
 
         expect(spy2.callCount).toEqual(1);
