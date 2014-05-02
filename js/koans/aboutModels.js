@@ -28,7 +28,7 @@ describe('About Backbone.Model', function() {
         // Why does the expected text differ from what is passed in when we create the Todo?
         // What is happening in Todo.initialize? (see js/todos.js line 22)
         // You can get this test passing without changing todos.js or actualText.
-        var todo = new Todo({ text: 'Stop monkeys from throwing their own feces!' });
+        var todo = new Todo({ text: 'Stop monkeys from throwing their own poop!' });
 
         actualText = 'Stop monkeys from throwing their own double rainbows!'; // Don't change
         expect(todo.get('text')).toBe(actualText);
