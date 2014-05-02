@@ -81,7 +81,8 @@ describe('About Backbone.Events', function() {
     it("Evented objects can bind 'all' as a special event name to capture all triggered events on the object.", function() {
         var callback = jasmine.createSpy('-Custom Event Callback-');
 
-        obj.on('all', callback);
+        obj.on('custom_event', callback);
+		obj.trigger('custom_event', 'custom_event');
 
         // How are you going to call obj.trigger to get both expectations passing?
 
