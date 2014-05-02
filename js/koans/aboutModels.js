@@ -57,7 +57,7 @@ describe('About Backbone.Model', function() {
 
         // What would you need to set on the todo properties to cause validation to fail?
         // Refer to Todo.validate in js/todos.js to see the logic.
-
+		todo.set({done: 'text'});
         var errorArgs = errorCallback.mostRecentCall.args;
 
         expect(errorArgs).toBeDefined();
