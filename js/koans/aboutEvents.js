@@ -56,7 +56,7 @@ describe('About Backbone.Events', function() {
         var foo = { color: 'blue' };
 
         var changeColor = function() {
-            this.color = 'red';
+            foo.color = 'red';
         }
 
         /***
