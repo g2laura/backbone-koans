@@ -47,7 +47,7 @@ describe('About Backbone.Events', function() {
 
         obj.on('some_event', callback);
 
-        obj.trigger('some_event');
+        obj.trigger('some_event', 'arg1', 'arg2');
 
         expect(callback.mostRecentCall.args).toEqual(['arg1', 'arg2']);
     });
