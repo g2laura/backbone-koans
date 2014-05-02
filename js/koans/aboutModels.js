@@ -40,6 +40,7 @@ describe('About Backbone.Model', function() {
         var todo = new Todo();
 
         todo.on('change', callback);
+		todo.set({text: 'text'});
 
         // How would you update a property on the todo here?
         // Hint: http://documentcloud.github.com/backbone/#Model-set
