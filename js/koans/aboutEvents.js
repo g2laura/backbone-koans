@@ -37,7 +37,7 @@ describe('About Backbone.Events', function() {
         obj.on('an_event another_event', callback);
 
         // How would you change the trigger call to trigger two events at the same time?
-        obj.trigger('an_event')
+        obj.trigger('an_event another_event')
 
         expect(callback.callCount).toBe(2);
     });
