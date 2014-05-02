@@ -23,9 +23,9 @@ describe('About Backbone.Collection', function() {
         //
         // Hint: Could you change attribute values on the todos themselves?
 
-        todos.add([{ text: 'Clean the house', order: 8},
-                   { text: 'Do the laundry',  order: 4},
-                   { text: 'Take a nap',      order: 3}]);
+        todos.add([{ text: 'Clean the house', order: 4},
+                   { text: 'Do the laundry',  order: 3},
+                   { text: 'Take a nap',      order: 5}]);
 
         expect(todos.at(0).get('text')).toEqual('Do the laundry');
         expect(todos.at(1).get('text')).toEqual('Clean the house');
