@@ -18,7 +18,7 @@ describe('About Backbone.Model', function() {
     });
 
     it('Attributes can be set on the model instance when it is created.', function() {
-        var todo = new Todo({ text: 'Get oil change for car.' });
+        var todo = new Todo({ text: 'FIX ME' });
 
         expect(todo.get('text')).toEqual('FIX ME');
     });
