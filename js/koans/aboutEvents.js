@@ -23,6 +23,7 @@ describe('About Backbone.Events', function() {
         var callback = jasmine.createSpy('-Custom Event Callback-');
 
         obj.on('basic_event', callback);
+		obj.trigger('basic_event');
 
         // How would you cause the callback for this custom event to be called?
 
