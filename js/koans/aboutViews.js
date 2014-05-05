@@ -24,7 +24,7 @@ describe('About Backbone.View', function() {
     it('Views are backed by a model instance, which provides the data when rendering the view.', function() {
         // What method would you call on todoView to get this expectation to pass?
         // Hint: You can accomplish this without accessing todoView.model directly.
-
+        todoView.model.set({done: true});
         expect(todoView.model.get('done')).toBe(true);
     });
 
