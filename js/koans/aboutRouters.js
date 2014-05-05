@@ -41,7 +41,7 @@ describe('About Backbone.Router', function() {
     });
 
     it('The routes object can also do wildcard matching for a given url, passing the entire matched path to the mapped method.', function() {
-        router.navigate('FIX ME', true);
+        router.navigate('articles/2011/07/01/a_blog_post', true);
 
         expect(router.articles).toHaveBeenCalled();
         expect(router.articles.mostRecentCall.args).toEqual(['2011/07/01/a_blog_post']);
