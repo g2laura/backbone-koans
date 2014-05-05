@@ -36,6 +36,7 @@ describe('About Backbone.View', function() {
         //       How do you access the view's DOM representation?
         //
         // Hint: http://documentcloud.github.com/backbone/#View-el and TodoApp.addOne in todos.js
+		$("#todoList").append(todoView.render().el);
 
         expect($('#todoList').find('li').length).toBe(1);
     });
