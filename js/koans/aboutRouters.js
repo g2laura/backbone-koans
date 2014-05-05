@@ -28,13 +28,13 @@ describe('About Backbone.Router', function() {
     // * http://documentcloud.github.com/backbone/#Router-navigate
 
     it('Routers provide a way to map urls to methods.', function() {
-        router.navigate('FIX ME', true);
+        router.navigate('help', true);
 
         expect(router.help).toHaveBeenCalled();
     });
 
     it('The routes object can do token matching for a given url, passing the matched tokens to the mapped method.', function() {
-        router.navigate('FIX ME', true);
+        router.navigate('search/restaurants/1', true);
 
         expect(router.search).toHaveBeenCalled();
         expect(router.search.mostRecentCall.args).toEqual(['restaurants', '1']);
